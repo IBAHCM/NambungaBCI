@@ -1,16 +1,17 @@
-Package: structure
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
+Package: NambungaBCI
+Type: Package
+Title: Test package for the Reproducible Programming in R course
+Version: 0.1.0
+Authors@R: person(given = "Ismail",
+           family = "Nambunga",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "2590916n@student.gla.ac.uk")
+Description: This test package is used to demonstrate how to write packages in R, using RStudio.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to
     pick a license
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/IBAHCM/NambungaBCI
+BugReports: https://github.com/IBAHCM/NambungaBCI/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
