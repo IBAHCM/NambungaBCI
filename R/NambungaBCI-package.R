@@ -4,6 +4,7 @@
 #' by community. And don't forget to reference the source of the data correctly.
 #' 
 #' @import magrittr
+#' @import RPiR
 #' 
 #' @name NambungaBCI-package
 #' @aliases NambungaBCI
