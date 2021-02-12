@@ -1,12 +1,9 @@
-#' NambungaBCI
+#' Barro Colorado Island data package
 #' 
-#' \code{NambungaBCI} is a dummy package developed as part of the Reproducible
-#' Programming in R course..
+#' Package holds the BCI data and contains two functions that sub samples by species or
+#' by community. And don't forget to reference the source of the data correctly.
 #' 
-#' This text will appear in the Details section of the documentation.
-#' 
-#' @author 
-#' Ismail Nambunga <2590916n@student.gla.ac.uk> (maintainer) \cr
+#' @import magrittr
 #' 
 #' @name NambungaBCI-package
 #' @aliases NambungaBCI
