@@ -1,3 +1,11 @@
+#' ----
+#' title: "Diversity of BCI"
+#' author: "Ismail Nambunga"
+#' date: '`r format(Sys.Date(), "%B %d %Y")`'
+#' output: html_document
+#' ----
+
+#' Running the demo of diversity of BCI
 library(NambungaBCI)
 
 # Make a copy of the taxonomy as a data frame
@@ -12,6 +20,7 @@ meta <- metacommunity(bci_2010)
 results <- meta_gamma(meta, qs = seq(from = 0, to = 5)) 
 plot(diversity ~ q, type = "l", data = results)
 
+# Creating a metacommunity to assess the similarity between species
 library(magrittr)
 taxSim <- taxonomy %>%
   tax2dist(c(GenusSpecies=0, Genus=1, Family=2, Other=3)) %>%
@@ -19,6 +28,9 @@ taxSim <- taxonomy %>%
 metatax <- metacommunity(bci_2010, taxSim)
 results4tax <- meta_gamma(metatax, qs = seq(from = 0, to = 5)) 
 lines(diversity ~ q, col=2, data = results4tax)
+
+# Creating a metacommunity to be analysed in {vegan} and transpose
+# the axes of the abundance data matrix
 
 library(vegan)
 
