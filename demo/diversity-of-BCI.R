@@ -1,11 +1,4 @@
-#' ----
-#' title: "Diversity of BCI"
-#' author: "Ismail Nambunga"
-#' date: '`r format(Sys.Date(), "%B %d %Y")`'
-#' output: html_document
-#' ----
-
-#' Running the demo of diversity of BCI
+#' Running demo for biodiversity calculation 
 library(NambungaBCI)
 
 # Make a copy of the taxonomy as a data frame
